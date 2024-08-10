@@ -51,7 +51,7 @@ if ('OTPCredential' in window) {
 
 ```html
 <!-- Add this script to initiate webotp -->
-<script src="web_otp_autofill.js" ></script>
+<script src="webotp_autofill.js" ></script>
 ```
 
 3. Configure
@@ -91,7 +91,7 @@ A typical SMS message looks like so:
 ```sms
 Your verification code is 123456.
 
-@top-level.example.com #123456 @embedded.com
+@top-level.example.com #123456
 ```
 
 - The first line and second blank line are optional and are for human readability.
@@ -100,10 +100,18 @@ Your verification code is 123456.
   - Followed by a space.
   - Followed by the OTP, preceded by a pound sign (#).
 
-## NOTE: if you are using flutter web page in iframe and need to autofill the otp
+## NOTE: if you are using flutter web page in iframe and need to autofill the otp and also SMS format will be 
 
 ```html
 <iframe src="https://embedded.com/..." allow="otp-credentials"> ... </iframe>
+```
+
+Sms Message looks like:
+
+```sms
+Your verification code is 123456.
+
+@top-level.example.com #123456 @embedded.com
 ```
 
 ## To get better understanding about webotp API refer the docs of [WebOtp API](https://developer.mozilla.org/en-US/docs/Web/API/WebOTP_API)
