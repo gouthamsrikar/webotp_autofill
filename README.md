@@ -15,7 +15,7 @@ and the Flutter guide for
 
 The WebOTP API provides a streamlined user experience for web apps to verify that a phone number belongs to a user when using it as a sign-in factor. WebOTP is an extension of the [Credential Management API](https://developer.mozilla.org/en-US/docs/Web/API/Credential_Management_API).
 
-## :book: Steps to integrate webotp_autofill 
+## 📖 Steps to integrate webotp_autofill
 
 1. Install **webotp_autofill** Dependency
 
@@ -54,7 +54,7 @@ if ('OTPCredential' in window) {
 <script src="web_otp_autofill.js" ></script>
 ```
 
-3. Configure **Sign up/Sign in**
+3. Configure
 
 - Import the following classes.
 
@@ -96,11 +96,12 @@ Your verification code is 123456.
 
 - The first line and second blank line are optional and are for human readability.
 - The last line is mandatory. It must be the last line if there are others present, and must consist of:
-    - The domain part of the URL of the website that invoked the API, preceded by a @.
-    - Followed by a space.
-    - Followed by the OTP, preceded by a pound sign (#).
+  - The domain part of the URL of the website that invoked the API, preceded by a @.
+  - Followed by a space.
+  - Followed by the OTP, preceded by a pound sign (#).
 
 ## NOTE: if you are using flutter web page in iframe and need to autofill the otp
+
 ```html
 <iframe src="https://embedded.com/..." allow="otp-credentials"> ... </iframe>
 ```
