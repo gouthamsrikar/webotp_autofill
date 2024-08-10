@@ -6,7 +6,7 @@ repository: https://github.com/gouthamsrikar/webotp_autofill
 
 environment:
   sdk: '>=3.3.4 <4.0.0'
-  flutter: ">=1.17.0"
+  flutter: ">=1.20.0"
 
 dependencies:
   flutter:
