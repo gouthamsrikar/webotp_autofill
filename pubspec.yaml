@@ -1,6 +1,6 @@
 name: webotp_autofill
 description: "The WebOTP API provides a streamlined user experience for web apps to verify that a phone number belongs to a user when using it as a sign-in factor. WebOTP is an extension of the Credential Management API"
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/gouthamsrikar/webotp_autofill
 repository: https://github.com/gouthamsrikar/webotp_autofill
 
@@ -18,6 +18,6 @@ dev_dependencies:
   flutter_lints: ^3.0.0
 
 flutter:
-
-platforms:
-  web:
+  plugin:
+    platforms:
+      web:
